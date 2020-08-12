@@ -1,4 +1,5 @@
 ﻿using FoodTime.Data.Models;
+using FoodTime.Data.ViewModels;
 using FoodTime.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -23,6 +24,11 @@ namespace FoodTime.Data
             //make sure the database has been created and we have permission to access it
             if(Ctx.Database.CanConnect())
             {
+                //uncomment this if we want to reseed the db on start up
+                //Ctx.Pastry.RemoveRange(Ctx.Set<Pastry>());
+                //Ctx.PastryFilling.RemoveRange(Ctx.Set<PastryFilling>());
+                //Ctx.PastryType.RemoveRange(Ctx.Set<PastryType>());
+                //Ctx.SaveChanges();
                 //check to see if this table has been seeded before
                 if (!Ctx.PastryType.Any())
                     CreatePastryTypes();
@@ -32,6 +38,8 @@ namespace FoodTime.Data
                 //check to see if the pastry table has been seeded with data
                 if (!Ctx.Pastry.Any())
                     CreatePastries();
+                if (!Ctx.PastryStock.Any())
+                    CreatePastryStocks();
             }
             else
             {
@@ -39,6 +47,13 @@ namespace FoodTime.Data
                 bool testConnected = Ctx.Database.CanConnect();
                 throw new DbNotCreatedOrAccessibleException();
             }
+        }
+
+        private void CreatePastryStocks()
+        {
+            IEnumerable<PastryStock> pastryStocks = Ctx.Pastry.GroupBy(e => new { e.PastryTypeId, e.PastryFillingId }).Select(e => new PastryStock { PastryFillingId = e.Key.PastryFillingId, PastryTypeId = e.Key.PastryTypeId, Stock = e.Count() });
+            Ctx.PastryStock.AddRange(pastryStocks);
+            Ctx.SaveChanges();
         }
 
         //create the pastry fillings that are available

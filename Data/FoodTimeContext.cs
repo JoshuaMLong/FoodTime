@@ -1,4 +1,5 @@
 ﻿using FoodTime.Data.Models;
+using FoodTime.Data.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -16,6 +17,7 @@ namespace FoodTime.Data
         public DbSet<Pastry> Pastry { get; set; }
         public DbSet<PastryType> PastryType { get; set; }
         public DbSet<PastryFilling> PastryFilling { get; set; }
+        public DbSet<PastryStock> PastryStock { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -28,8 +30,19 @@ namespace FoodTime.Data
             builder.Entity<Pastry>()
                 .HasKey(e => e.Id);
             builder.Entity<Pastry>()
+                .HasIndex(e => new { e.PastryFillingId, e.PastryTypeId });
+            builder.Entity<Pastry>()
                 .Property(e => e.Id)
+                .HasField("_id")
                 .ValueGeneratedOnAdd();
+
+            builder.Entity<Pastry>()
+                .Property(e => e.Name)
+                .HasField("_name");
+
+            builder.Entity<Pastry>()
+                .Property(e => e.Description)
+                .HasField("_description");
 
             builder.Entity<PastryFilling>()
                 .HasKey(e => e.Id);
@@ -42,6 +55,10 @@ namespace FoodTime.Data
             builder.Entity<PastryType>()
                 .Property(e => e.Id)
                 .ValueGeneratedOnAdd();
+
+            builder.Entity<PastryStock>()
+                .HasKey(e => new { pfid = e.PastryFillingId, ptid = e.PastryTypeId })
+                .IsClustered();
         }
     }
 }

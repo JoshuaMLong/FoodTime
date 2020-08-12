@@ -31,7 +31,6 @@ C:\Users\Josh\source\repos\FoodTime\FoodTime\bin\Debug\netcoreapp3.1\Microsoft.E
 C:\Users\Josh\source\repos\FoodTime\FoodTime\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\Josh\source\repos\FoodTime\FoodTime\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Josh\source\repos\FoodTime\FoodTime\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Josh\source\repos\FoodTime\FoodTime\obj\Debug\netcoreapp3.1\FoodTime.csprojAssemblyReference.cache
 C:\Users\Josh\source\repos\FoodTime\FoodTime\obj\Debug\netcoreapp3.1\FoodTime.csproj.CopyComplete
 C:\Users\Josh\source\repos\FoodTime\FoodTime\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Josh\source\repos\FoodTime\FoodTime\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
@@ -149,3 +148,4 @@ C:\Users\Josh\source\repos\FoodTime\FoodTime\bin\Debug\netcoreapp3.1\Swashbuckle
 C:\Users\Josh\source\repos\FoodTime\FoodTime\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Josh\source\repos\FoodTime\FoodTime\obj\Debug\netcoreapp3.1\FoodTime.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Josh\source\repos\FoodTime\FoodTime\obj\Debug\netcoreapp3.1\FoodTime.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Josh\source\repos\FoodTime\FoodTime\obj\Debug\netcoreapp3.1\FoodTime.csprojAssemblyReference.cache

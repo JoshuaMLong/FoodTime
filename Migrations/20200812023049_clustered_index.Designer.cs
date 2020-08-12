@@ -4,14 +4,16 @@ using FoodTime.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FoodTime.Migrations
 {
     [DbContext(typeof(FoodTimeContext))]
-    partial class FoodTimeContextModelSnapshot : ModelSnapshot
+    [Migration("20200812023049_clustered_index")]
+    partial class clustered_index
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,25 +71,6 @@ namespace FoodTime.Migrations
                     b.ToTable("PastryFilling");
                 });
 
-            modelBuilder.Entity("FoodTime.Data.Models.PastryStock", b =>
-                {
-                    b.Property<int>("PastryFillingId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PastryTypeId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
-
-                    b.HasKey("PastryFillingId", "PastryTypeId")
-                        .HasAnnotation("SqlServer:Clustered", true);
-
-                    b.HasIndex("PastryTypeId");
-
-                    b.ToTable("PastryStock");
-                });
-
             modelBuilder.Entity("FoodTime.Data.Models.PastryType", b =>
                 {
                     b.Property<int>("Id")
@@ -108,21 +91,6 @@ namespace FoodTime.Migrations
                 });
 
             modelBuilder.Entity("FoodTime.Data.Models.Pastry", b =>
-                {
-                    b.HasOne("FoodTime.Data.Models.PastryFilling", "PastryFilling")
-                        .WithMany()
-                        .HasForeignKey("PastryFillingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("FoodTime.Data.Models.PastryType", "PastryType")
-                        .WithMany()
-                        .HasForeignKey("PastryTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("FoodTime.Data.Models.PastryStock", b =>
                 {
                     b.HasOne("FoodTime.Data.Models.PastryFilling", "PastryFilling")
                         .WithMany()

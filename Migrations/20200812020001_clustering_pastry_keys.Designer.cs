@@ -4,14 +4,16 @@ using FoodTime.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FoodTime.Migrations
 {
     [DbContext(typeof(FoodTimeContext))]
-    partial class FoodTimeContextModelSnapshot : ModelSnapshot
+    [Migration("20200812020001_clustering_pastry_keys")]
+    partial class clustering_pastry_keys
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,13 +23,19 @@ namespace FoodTime.Migrations
 
             modelBuilder.Entity("FoodTime.Data.Models.Pastry", b =>
                 {
+                    b.Property<int>("PastryFillingId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PastryTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("Image")
                         .HasColumnType("varbinary(max)");
@@ -35,17 +43,9 @@ namespace FoodTime.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PastryFillingId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PastryTypeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
+                    b.HasKey("PastryFillingId", "PastryTypeId");
 
                     b.HasIndex("PastryTypeId");
-
-                    b.HasIndex("PastryFillingId", "PastryTypeId");
 
                     b.ToTable("Pastry");
                 });
@@ -69,25 +69,6 @@ namespace FoodTime.Migrations
                     b.ToTable("PastryFilling");
                 });
 
-            modelBuilder.Entity("FoodTime.Data.Models.PastryStock", b =>
-                {
-                    b.Property<int>("PastryFillingId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PastryTypeId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
-
-                    b.HasKey("PastryFillingId", "PastryTypeId")
-                        .HasAnnotation("SqlServer:Clustered", true);
-
-                    b.HasIndex("PastryTypeId");
-
-                    b.ToTable("PastryStock");
-                });
-
             modelBuilder.Entity("FoodTime.Data.Models.PastryType", b =>
                 {
                     b.Property<int>("Id")
@@ -108,21 +89,6 @@ namespace FoodTime.Migrations
                 });
 
             modelBuilder.Entity("FoodTime.Data.Models.Pastry", b =>
-                {
-                    b.HasOne("FoodTime.Data.Models.PastryFilling", "PastryFilling")
-                        .WithMany()
-                        .HasForeignKey("PastryFillingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("FoodTime.Data.Models.PastryType", "PastryType")
-                        .WithMany()
-                        .HasForeignKey("PastryTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("FoodTime.Data.Models.PastryStock", b =>
                 {
                     b.HasOne("FoodTime.Data.Models.PastryFilling", "PastryFilling")
                         .WithMany()
