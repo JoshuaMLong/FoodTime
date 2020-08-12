@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using FoodTime.Data;
 using FoodTime.Data.Models;
 using FoodTime.Data.Interfaces;
+using FoodTime.Data.ViewModels;
 
 namespace FoodTime.Controllers
 {
@@ -29,9 +30,15 @@ namespace FoodTime.Controllers
         {
             return Ok(await PastryRepository.GetAllPastriesAsync());
         }
+        // GET: api/Pastry
+        [HttpGet("GroupedForStock")]
+        public async Task<ActionResult<IEnumerable<PastryWithStock>>> GetPastryGroupedForStock()
+        {
+            return Ok(await PastryRepository.GetAllPastriesGroupForStockAsync());
+        }
 
         // GET: api/Pastry/5
-        [HttpGet("{id}")]
+        [HttpGet("ById/{id}")]
         public async Task<ActionResult<Pastry>> GetPastry(int id)
         {
             var pastry = await PastryRepository.GetPastriesByIdAsync(id);
@@ -44,7 +51,7 @@ namespace FoodTime.Controllers
             return pastry;
         }
         // GET: api/Pastry/Flaky Cherry Pastry
-        [HttpGet("{name}")]
+        [HttpGet("ByName/{name}")]
         public async Task<ActionResult<IEnumerable<Pastry>>> GetPastryByName(string name)
         {
             var pastry = await PastryRepository.GetPastriesByNameAsync(name);
@@ -55,6 +62,54 @@ namespace FoodTime.Controllers
             }
 
             return Ok(pastry);
+        }
+        [HttpGet("GroupedForStock/{name}")]
+        public async Task<ActionResult<IEnumerable<PastryWithStock>>> GetPastryByNameGroupedForStock(string name)
+        {
+            var pastry = await PastryRepository.GetPastriesByNameGroupByStockAsync(name);
+
+            if (pastry == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(pastry);
+        }
+        [HttpGet("GroupedForStock/ByPastryFilling/{id}")]
+        public async Task<ActionResult<IEnumerable<Pastry>>> GetPastryByNameGroupedForStockByFilling(int id)
+        {
+            var pastry = await PastryRepository.GetPastriesByPastryFillingAsync(id);
+
+            if (pastry == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(pastry);
+        }
+        [HttpGet("GroupedForStock/ByPastryType/{id}")]
+        public async Task<ActionResult<IEnumerable<Pastry>>> GetPastryByTypeGroupedForStockByFilling(int id)
+        {
+            var pastry = await PastryRepository.GetPastriesByPastryTypeAsync(id);
+
+            if (pastry == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(pastry);
+        }
+        [HttpGet("ByPastryStockCompositeKey/")]
+        public async Task<ActionResult<IEnumerable<Pastry>>> GetPastryByPastryStockCompositeKey([FromQuery]PastryStockCompositeKey key)
+        {
+            var pastries = await PastryRepository.GetPastriesByPastryStockCompositeKey(key);
+
+            if (pastries.Count() == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(pastries);
         }
 
         // PUT: api/Pastry/5
@@ -93,7 +148,7 @@ namespace FoodTime.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Pastry>> PostPastry(Pastry pastry)
+        public async Task<ActionResult<Pastry>> PostPastry([FromBody] Pastry pastry)
         {
             PastryRepository.Create(pastry);
             await PastryRepository.SaveChangesAsync();

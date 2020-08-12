@@ -16,34 +16,34 @@ namespace FoodTime.Data.Repositories
 
         }
 
-        public async Task<IEnumerable<PastryType>> GetPastryTypesAsync()
+        public async ValueTask<IEnumerable<PastryType>> GetPastryTypesAsync()
         {
             return await Get().ToListAsync();
         }
 
-        public async Task<PastryType> GetPastryTypeByIdAsync(int id)
+        public async ValueTask<PastryType> GetPastryTypeByIdAsync(int id)
         {
             return await Get(pt => pt.Id == id).SingleAsync();
         }
 
-        public async Task<IEnumerable<PastryType>> GetPastryTypesByIdAsync(IEnumerable<int> ids)
+        public async ValueTask<IEnumerable<PastryType>> GetPastryTypesByIdAsync(IEnumerable<int> ids)
         {
             return await Get(pt => ids.Contains(pt.Id)).ToListAsync();
         }
 
-        public async Task<IEnumerable<PastryType>> GetPastryTypesByNameAsync(string name)
+        public async ValueTask<IEnumerable<PastryType>> GetPastryTypesByNameAsync(string name)
         {
             return await Get(pt => pt.Name == name).ToListAsync();
         }
-        public async Task<IEnumerable<PastryType>> GetPastryTypesByNameAsync(IEnumerable<string> names)
+        public async ValueTask<IEnumerable<PastryType>> GetPastryTypesByNameAsync(IEnumerable<string> names)
         {
             return await Get(pt => names.Contains(pt.Name)).ToListAsync();
         }
-        public async Task<IEnumerable<PastryType>> GetPastryTypesByPriceAsync(decimal price)
+        public async ValueTask<IEnumerable<PastryType>> GetPastryTypesByPriceAsync(decimal price)
         {
             return await Get(pt => pt.Price == price).ToListAsync();
         }
-        public async Task<IEnumerable<PastryType>> GetPastryTypesByPriceAsync(IEnumerable<decimal> prices)
+        public async ValueTask<IEnumerable<PastryType>> GetPastryTypesByPriceAsync(IEnumerable<decimal> prices)
         {
             return await Get(pt => prices.Contains(pt.Price)).ToListAsync();
         }
