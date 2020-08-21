@@ -1,5 +1,5 @@
-﻿using FoodTime.Data.Interfaces;
-using FoodTime.Data.Models;
+﻿using FoodTime.API.Data.Interfaces;
+using FoodTime.API.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTime.Data.Repositories
+namespace FoodTime.API.Data.Repositories
 {
     public class PastryFillingRepository : BaseRepository<PastryFilling>, IPastryFillingRepository
     {

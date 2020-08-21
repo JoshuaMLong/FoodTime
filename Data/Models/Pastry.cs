@@ -1,9 +1,9 @@
-﻿using FoodTime.Data.Interfaces;
-using FoodTime.Exceptions;
+﻿using FoodTime.API.Data.Interfaces;
+using FoodTime.API.Exceptions;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace FoodTime.Data.Models
+namespace FoodTime.API.Data.Models
 {
 
     public class Pastry : Food

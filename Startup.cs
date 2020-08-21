@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FoodTime.Data;
-using FoodTime.Data.Interfaces;
-using FoodTime.Data.Repositories;
+using FoodTime.API.Data;
+using FoodTime.API.Data.Interfaces;
+using FoodTime.API.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,7 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace FoodTime
+namespace FoodTime.API
 {
     public class Startup
     {
@@ -39,7 +39,7 @@ namespace FoodTime
             {
                 options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
                 {
-                    Title = "FoodTime Api",
+                    Title = "FoodTime.API Api",
                     Version = "v1",
                     Description = "Sample API implementation for an online food store"
                 });
@@ -65,7 +65,7 @@ namespace FoodTime
                 endpoints.MapControllers();
             });
             app.UseSwagger();
-            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "FoodTime Api"));
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "FoodTime.API Api"));
         }
     }
 }

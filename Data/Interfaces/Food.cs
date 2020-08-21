@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTime.Data.Interfaces
+namespace FoodTime.API.Data.Interfaces
 {
     public abstract class Food
     {

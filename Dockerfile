@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["FoodTime/FoodTime.csproj", "FoodTime/"]
-RUN dotnet restore "FoodTime/FoodTime.csproj"
+COPY ["FoodTime.API/FoodTime.API.csproj", "FoodTime.API/"]
+RUN dotnet restore "FoodTime.API/FoodTime.API.csproj"
 COPY . .
-WORKDIR "/src/FoodTime"
-RUN dotnet build "FoodTime.csproj" -c Release -o /app/build
+WORKDIR "/src/FoodTime.API"
+RUN dotnet build "FoodTime.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "FoodTime.csproj" -c Release -o /app/publish
+RUN dotnet publish "FoodTime.API.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "FoodTime.dll"]
+ENTRYPOINT ["dotnet", "FoodTime.API.dll"]

@@ -1,6 +1,6 @@
-﻿using FoodTime.Data.Interfaces;
-using FoodTime.Data.Models;
-using FoodTime.Data.ViewModels;
+﻿using FoodTime.API.Data.Interfaces;
+using FoodTime.API.Data.Models;
+using FoodTime.API.Data.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTime.Data.Repositories
+namespace FoodTime.API.Data.Repositories
 {
     public class PastryRepository : BaseRepository<Pastry>, IPastryRepository
     {

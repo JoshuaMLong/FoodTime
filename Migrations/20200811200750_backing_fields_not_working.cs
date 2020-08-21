@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace FoodTime.Migrations
+namespace FoodTime.API.Migrations
 {
     public partial class backing_fields_not_working : Migration
     {

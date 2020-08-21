@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using FoodTime.Data;
-using FoodTime.Data.Models;
-using FoodTime.Data.Interfaces;
+using FoodTime.API.Data.Models;
+using FoodTime.API.Data.Interfaces;
 
-namespace FoodTime.Controllers
+namespace FoodTime.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -131,7 +127,7 @@ namespace FoodTime.Controllers
 
         private async Task<bool> PastryFillingExists(int id)
         {
-            return (await PastryFillingRepository.GetPastryFillingsByIdAsync(id)) is object;
+            return await PastryFillingRepository.GetPastryFillingsByIdAsync(id) is object;
         }
     }
 }

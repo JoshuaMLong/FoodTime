@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace FoodTime.Migrations
+namespace FoodTime.API.Migrations
 {
     public partial class pastryfilling_price_correction : Migration
     {

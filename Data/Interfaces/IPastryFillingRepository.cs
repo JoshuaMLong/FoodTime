@@ -1,8 +1,8 @@
-﻿using FoodTime.Data.Models;
+﻿using FoodTime.API.Data.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace FoodTime.Data.Interfaces
+namespace FoodTime.API.Data.Interfaces
 {
     public interface IPastryFillingRepository : IBaseRepository<PastryFilling>
     {

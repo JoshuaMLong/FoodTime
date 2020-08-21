@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTime.Data.Models
+namespace FoodTime.API.Data.Models
 {
     public class PastryStock
     {

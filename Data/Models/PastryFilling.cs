@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FoodTime.Data.Models
+namespace FoodTime.API.Data.Models
 {
     public class PastryFilling
     {

@@ -1,4 +1,4 @@
-﻿using FoodTime.Data.Interfaces;
+﻿using FoodTime.API.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTime.Data.Repositories
+namespace FoodTime.API.Data.Repositories
 {
     public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
     {

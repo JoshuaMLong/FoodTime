@@ -1,9 +1,9 @@
-﻿using FoodTime.Data.Models;
-using FoodTime.Data.ViewModels;
+﻿using FoodTime.API.Data.Models;
+using FoodTime.API.Data.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace FoodTime.Data
+namespace FoodTime.API.Data
 {
     public class FoodTimeContext : DbContext
     {
@@ -22,7 +22,7 @@ namespace FoodTime.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer(configuration.GetConnectionString("FoodTime"));
+                optionsBuilder.UseSqlServer(configuration.GetConnectionString("FoodTime.API"));
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

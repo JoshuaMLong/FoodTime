@@ -1,10 +1,10 @@
-﻿using FoodTime.Data.Models;
-using FoodTime.Data.Repositories;
-using FoodTime.Data.ViewModels;
+﻿using FoodTime.API.Data.Models;
+using FoodTime.API.Data.Repositories;
+using FoodTime.API.Data.ViewModels;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace FoodTime.Data.Interfaces
+namespace FoodTime.API.Data.Interfaces
 {
     public interface IPastryRepository : IBaseRepository<Pastry>
     {

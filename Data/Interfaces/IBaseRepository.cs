@@ -3,7 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace FoodTime.Data.Interfaces
+namespace FoodTime.API.Data.Interfaces
 {
     public interface IBaseRepository<T> where T : class
     {
