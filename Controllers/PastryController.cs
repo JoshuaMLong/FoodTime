@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FoodTime.API.Data;
-using FoodTime.API.Data.Models;
-using FoodTime.API.Data.Interfaces;
-using FoodTime.API.Data.ViewModels;
+using FoodTime.Domain.Interfaces;
+using FoodTime.Domain.Models;
+using FoodTime.Domain.Data.ViewModels;
 
 namespace FoodTime.API.Controllers
 {

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using FoodTime.API.Data.Interfaces;
-using FoodTime.API.Data.Models;
-using Microsoft.AspNetCore.Http;
+using FoodTime.Domain.Interfaces;
+using FoodTime.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

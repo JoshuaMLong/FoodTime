@@ -1,6 +1,7 @@
-﻿using FoodTime.API.Data.Models;
-using FoodTime.API.Data.ViewModels;
+﻿using FoodTime.API.Data.ViewModels;
 using FoodTime.API.Exceptions;
+using FoodTime.Domain;
+using FoodTime.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using FoodTime.Domain.Interfaces;
+using FoodTime.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using FoodTime.API.Data.Models;
-using FoodTime.API.Data.Interfaces;
 
 namespace FoodTime.API.Controllers
 {
