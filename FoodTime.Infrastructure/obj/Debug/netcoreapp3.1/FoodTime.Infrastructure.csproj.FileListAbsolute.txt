@@ -1,0 +1,12 @@
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\bin\Debug\netcoreapp3.1\FoodTime.Infrastructure.deps.json
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\bin\Debug\netcoreapp3.1\FoodTime.Infrastructure.dll
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\bin\Debug\netcoreapp3.1\FoodTime.Infrastructure.pdb
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\bin\Debug\netcoreapp3.1\FoodTime.Domain.dll
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\bin\Debug\netcoreapp3.1\FoodTime.Domain.pdb
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\obj\Debug\netcoreapp3.1\FoodTime.Infrastructure.csprojAssemblyReference.cache
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\obj\Debug\netcoreapp3.1\FoodTime.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\obj\Debug\netcoreapp3.1\FoodTime.Infrastructure.AssemblyInfo.cs
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\obj\Debug\netcoreapp3.1\FoodTime.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\obj\Debug\netcoreapp3.1\FoodTime.Infrastructure.csproj.CopyComplete
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\obj\Debug\netcoreapp3.1\FoodTime.Infrastructure.dll
+C:\Users\wmedi\source\repos\FoodTime.Infrastructure\obj\Debug\netcoreapp3.1\FoodTime.Infrastructure.pdb
