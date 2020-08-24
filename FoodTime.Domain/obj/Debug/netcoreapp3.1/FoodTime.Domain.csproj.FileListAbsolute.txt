@@ -1,0 +1,8 @@
+C:\Users\wmedi\source\repos\FoodTime.Domain\bin\Debug\netcoreapp3.1\FoodTime.Domain.deps.json
+C:\Users\wmedi\source\repos\FoodTime.Domain\bin\Debug\netcoreapp3.1\FoodTime.Domain.dll
+C:\Users\wmedi\source\repos\FoodTime.Domain\bin\Debug\netcoreapp3.1\FoodTime.Domain.pdb
+C:\Users\wmedi\source\repos\FoodTime.Domain\obj\Debug\netcoreapp3.1\FoodTime.Domain.AssemblyInfoInputs.cache
+C:\Users\wmedi\source\repos\FoodTime.Domain\obj\Debug\netcoreapp3.1\FoodTime.Domain.AssemblyInfo.cs
+C:\Users\wmedi\source\repos\FoodTime.Domain\obj\Debug\netcoreapp3.1\FoodTime.Domain.csproj.CoreCompileInputs.cache
+C:\Users\wmedi\source\repos\FoodTime.Domain\obj\Debug\netcoreapp3.1\FoodTime.Domain.dll
+C:\Users\wmedi\source\repos\FoodTime.Domain\obj\Debug\netcoreapp3.1\FoodTime.Domain.pdb

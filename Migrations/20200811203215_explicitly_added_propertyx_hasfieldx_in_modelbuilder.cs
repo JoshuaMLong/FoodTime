@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace FoodTime.Migrations
+namespace FoodTime.API.Migrations
 {
     public partial class explicitly_added_propertyx_hasfieldx_in_modelbuilder : Migration
     {

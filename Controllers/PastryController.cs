@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using FoodTime.Data;
-using FoodTime.Data.Models;
-using FoodTime.Data.Interfaces;
-using FoodTime.Data.ViewModels;
+using FoodTime.API.Data;
+using FoodTime.Domain.Interfaces;
+using FoodTime.Domain.Models;
+using FoodTime.Domain.Data.ViewModels;
 
-namespace FoodTime.Controllers
+namespace FoodTime.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

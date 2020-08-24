@@ -1,6 +1,7 @@
-﻿using FoodTime.Data.Models;
-using FoodTime.Data.ViewModels;
-using FoodTime.Exceptions;
+﻿using FoodTime.API.Data.ViewModels;
+using FoodTime.API.Exceptions;
+using FoodTime.Domain;
+using FoodTime.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTime.Data
+namespace FoodTime.API.Data
 {
     public class DbSeeder
     {

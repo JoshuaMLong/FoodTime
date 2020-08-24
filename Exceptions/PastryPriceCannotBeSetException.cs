@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTime.Exceptions
+namespace FoodTime.API.Exceptions
 {
     public class PastryPriceCannotBeSetException : Exception
     {

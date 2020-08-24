@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace FoodTime.Migrations
+namespace FoodTime.API.Migrations
 {
     public partial class added_notmappedattribute_to_public_fields_on_pastry : Migration
     {
