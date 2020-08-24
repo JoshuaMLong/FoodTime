@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wmedi\\source\\repos\\FoodTime\\FoodTime.API.csproj": {}
+    "C:\\Users\\Josh\\source\\repos\\FoodTime\\FoodTime.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wmedi\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj": {
+    "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wmedi\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj",
         "projectName": "FoodTime.Domain",
-        "projectPath": "C:\\Users\\wmedi\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj",
-        "packagesPath": "C:\\Users\\wmedi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wmedi\\source\\repos\\FoodTime.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj",
+        "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\wmedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,21 +65,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\wmedi\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj": {
+    "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wmedi\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj",
         "projectName": "FoodTime.Infrastructure",
-        "projectPath": "C:\\Users\\wmedi\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\wmedi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wmedi\\source\\repos\\FoodTime.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\wmedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +95,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\wmedi\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj": {
-                "projectPath": "C:\\Users\\wmedi\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj"
+              "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj": {
+                "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj"
               }
             }
           }
@@ -118,21 +124,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\wmedi\\source\\repos\\FoodTime\\FoodTime.API.csproj": {
+    "C:\\Users\\Josh\\source\\repos\\FoodTime\\FoodTime.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wmedi\\source\\repos\\FoodTime\\FoodTime.API.csproj",
+        "projectUniqueName": "C:\\Users\\Josh\\source\\repos\\FoodTime\\FoodTime.API.csproj",
         "projectName": "FoodTime.API",
-        "projectPath": "C:\\Users\\wmedi\\source\\repos\\FoodTime\\FoodTime.API.csproj",
-        "packagesPath": "C:\\Users\\wmedi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wmedi\\source\\repos\\FoodTime\\obj\\",
+        "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime\\FoodTime.API.csproj",
+        "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Josh\\source\\repos\\FoodTime\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\wmedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -145,11 +154,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\wmedi\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj": {
-                "projectPath": "C:\\Users\\wmedi\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj"
+              "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj": {
+                "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj"
               },
-              "C:\\Users\\wmedi\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\wmedi\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj"
+              "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj"
               }
             }
           }
@@ -226,7 +235,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
