@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FoodTime.API.Data;
-using FoodTime.Domain;
-using FoodTime.Domain.Interfaces;
+using FoodTime.Infrastructure;
+using FoodTime.Infrastructure.Interfaces;
 using FoodTime.Infrastructure.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,11 +32,11 @@ namespace FoodTime.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<FoodTimeContext>();
+            services.AddDbContext<FoodTimeContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FoodTime.API")));
             services.AddScoped<DbSeeder>();
             services.AddTransient<IPastryRepository, PastryRepository>();
             services.AddTransient<IPastryFillingRepository, PastryFillingRepository>();
-            services.AddTransient<IPastryTypeRepository, PastryTypeRepository>();
+            services.AddTransient<IPastryDoughRepository, PastryDoughRepository>();
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo

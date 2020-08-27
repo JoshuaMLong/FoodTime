@@ -1,4 +1,4 @@
-﻿using FoodTime.Domain.Models;
+﻿using FoodTime.Infrastructure.Models;
 
 namespace FoodTime.API.Data.ViewModels
 {

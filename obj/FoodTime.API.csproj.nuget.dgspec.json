@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Josh\\source\\repos\\FoodTime\\FoodTime.API.csproj": {}
+    "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime\\FoodTime.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj": {
+    "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Domain\\FoodTime.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Domain\\FoodTime.Domain.csproj",
         "projectName": "FoodTime.Domain",
-        "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj",
+        "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Domain\\FoodTime.Domain.csproj",
         "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -45,6 +45,12 @@
               "target": "Package",
               "version": "[3.1.7, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.7, )"
@@ -69,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj": {
+    "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj",
         "projectName": "FoodTime.Infrastructure",
-        "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -95,8 +101,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj": {
-                "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj"
+              "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Domain\\FoodTime.Domain.csproj": {
+                "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Domain\\FoodTime.Domain.csproj"
               }
             }
           }
@@ -109,6 +115,26 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -128,14 +154,14 @@
         }
       }
     },
-    "C:\\Users\\Josh\\source\\repos\\FoodTime\\FoodTime.API.csproj": {
+    "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime\\FoodTime.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josh\\source\\repos\\FoodTime\\FoodTime.API.csproj",
+        "projectUniqueName": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime\\FoodTime.API.csproj",
         "projectName": "FoodTime.API",
-        "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime\\FoodTime.API.csproj",
+        "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime\\FoodTime.API.csproj",
         "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josh\\source\\repos\\FoodTime\\obj\\",
+        "outputPath": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -154,11 +180,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj": {
-                "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Domain\\FoodTime.Domain.csproj"
+              "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Domain\\FoodTime.Domain.csproj": {
+                "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Domain\\FoodTime.Domain.csproj"
               },
-              "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj"
+              "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Josh\\source\\repos\\FoodTimeContainer\\FoodTime.Infrastructure\\FoodTime.Infrastructure.csproj"
               }
             }
           }
@@ -215,6 +241,10 @@
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[5.5.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

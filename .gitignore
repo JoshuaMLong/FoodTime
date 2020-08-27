@@ -1,4 +1,5 @@
 appsettings.json
 appsettings.*.json
-.vs/*
-obj/*
+.vs/
+obj/
+bin/

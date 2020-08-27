@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FoodTime.API.Data;
-using FoodTime.Domain.Interfaces;
-using FoodTime.Domain.Models;
-using FoodTime.Domain.Data.ViewModels;
+using FoodTime.Infrastructure.Interfaces;
+using FoodTime.Infrastructure.Models;
+using FoodTime.Infrastructure.Data.ViewModels;
 
 namespace FoodTime.API.Controllers
 {
@@ -25,7 +25,7 @@ namespace FoodTime.API.Controllers
         }
 
         // GET: api/Pastry
-        [HttpGet]
+        [HttpGet("GetAllPastries")]
         public async Task<ActionResult<IEnumerable<Pastry>>> GetPastry()
         {
             return Ok(await PastryRepository.GetAllPastriesAsync());
@@ -87,7 +87,7 @@ namespace FoodTime.API.Controllers
 
             return Ok(pastry);
         }
-        [HttpGet("GroupedForStock/ByPastryType/{id}")]
+        [HttpGet("GroupedForStock/ByPastryDough/{id}")]
         public async Task<ActionResult<IEnumerable<Pastry>>> GetPastryByTypeGroupedForStockByFilling(int id)
         {
             var pastry = await PastryRepository.GetPastriesByPastryTypeAsync(id);
@@ -99,7 +99,7 @@ namespace FoodTime.API.Controllers
 
             return Ok(pastry);
         }
-        [HttpGet("ByPastryStockCompositeKey/")]
+        [HttpGet("ByPastryTypeCompositeKey/")]
         public async Task<ActionResult<IEnumerable<Pastry>>> GetPastryByPastryStockCompositeKey([FromQuery]PastryStockCompositeKey key)
         {
             var pastries = await PastryRepository.GetPastriesByPastryStockCompositeKey(key);
