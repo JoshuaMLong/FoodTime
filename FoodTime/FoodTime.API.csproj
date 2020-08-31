@@ -1,0 +1,112 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>140c259a-681b-4eaa-b8d6-fc3590f2957a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <StartupObject>FoodTime.API.Program</StartupObject>
+    <DockerfileContext>..\FoodTimeContainer</DockerfileContext>
+    <Configurations>Debug;Release;Development;UAT;Production</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\**" />
+    <Content Remove="Services\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\ChouxAlmond.jpg" />
+    <Content Include="Images\ChouxApple.jpg" />
+    <Content Include="Images\ChouxApricot.jpg" />
+    <Content Include="Images\ChouxBananaCream.jpg" />
+    <Content Include="Images\ChouxBlackberry.jpg" />
+    <Content Include="Images\ChouxBlueberry.jpg" />
+    <Content Include="Images\ChouxCherry.jpg" />
+    <Content Include="Images\ChouxChocolate.jpg" />
+    <Content Include="Images\ChouxCreamCheese.jpg" />
+    <Content Include="Images\ChouxLemon.jpg" />
+    <Content Include="Images\ChouxMeat.jpg" />
+    <Content Include="Images\ChouxPecan.jpg" />
+    <Content Include="Images\FiloAlmond.jpg" />
+    <Content Include="Images\FiloApple.jpg" />
+    <Content Include="Images\FiloApricot.jpg" />
+    <Content Include="Images\FiloBananaCream.jpg" />
+    <Content Include="Images\FiloBlackberry.jpg" />
+    <Content Include="Images\FiloBlueberry.jpg" />
+    <Content Include="Images\FiloCherry.jpg" />
+    <Content Include="Images\FiloChocolate.jpg" />
+    <Content Include="Images\FiloCreamCheese.jpg" />
+    <Content Include="Images\FiloLemon.jpg" />
+    <Content Include="Images\FiloMeat.jpg" />
+    <Content Include="Images\FiloPecan.jpg" />
+    <Content Include="Images\FiloPumpkin.jpg" />
+    <Content Include="Images\FlakyAlmond.jpg" />
+    <Content Include="Images\FlakyApple.jpg" />
+    <Content Include="Images\FlakyApricot.jpg" />
+    <Content Include="Images\FlakyBananaCream.jpg" />
+    <Content Include="Images\FlakyBlackberry.jpg" />
+    <Content Include="Images\FlakyBlueberry.jpg" />
+    <Content Include="Images\FlakyCherry.jpg" />
+    <Content Include="Images\FlakyChocolate.jpg" />
+    <Content Include="Images\FlakyCreamCheese.jpg" />
+    <Content Include="Images\FlakyLemon.jpg" />
+    <Content Include="Images\FlakyMeat.jpg" />
+    <Content Include="Images\FlakyPecan.jpg" />
+    <Content Include="Images\FlakyPumpkin.jpg" />
+    <Content Include="Images\PuffAlmond.jpg" />
+    <Content Include="Images\PuffApple.jpg" />
+    <Content Include="Images\PuffApricot.jpg" />
+    <Content Include="Images\PuffBananaCream.jpg" />
+    <Content Include="Images\PuffBlackberry.jpg" />
+    <Content Include="Images\PuffBlueberry.jpg" />
+    <Content Include="Images\PuffCherry.jpg" />
+    <Content Include="Images\PuffChocolate.jpg" />
+    <Content Include="Images\PuffChocolate.png" />
+    <Content Include="Images\PuffCreamCheese.jpg" />
+    <Content Include="Images\PuffLemon.jpg" />
+    <Content Include="Images\PuffMeat.jpg" />
+    <Content Include="Images\PuffPecan.jpg" />
+    <Content Include="Images\PuffPumpkin.jpg" />
+    <Content Include="Images\ShortcrustAlmond.jpg" />
+    <Content Include="Images\ShortcrustApple.jpg" />
+    <Content Include="Images\ShortcrustApricot.jpg" />
+    <Content Include="Images\ShortcrustBananaCream.jpg" />
+    <Content Include="Images\ShortcrustBlackberry.jpg" />
+    <Content Include="Images\ShortcrustCherry.jpg" />
+    <Content Include="Images\ShortcrustChocolate.jpg" />
+    <Content Include="Images\ShortcrustCreamCheese.jpg" />
+    <Content Include="Images\ShortcrustLemon.jpg" />
+    <Content Include="Images\ShortcrustMeat.jpg" />
+    <Content Include="Images\ShortcrustPecan.jpg" />
+    <Content Include="Images\ShortcrustPumpkin.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.5.1" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FoodTime.Domain\FoodTime.Domain.csproj" />
+    <ProjectReference Include="..\FoodTime.Infrastructure\FoodTime.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>
