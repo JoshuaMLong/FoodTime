@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodTime.API", "FoodTime\FoodTime.API.csproj", "{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodTime.Domain", "FoodTime.Domain\FoodTime.Domain.csproj", "{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodTime.Infrastructure", "FoodTime.Infrastructure\FoodTime.Infrastructure.csproj", "{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Production|Any CPU = Production|Any CPU
+		Release|Any CPU = Release|Any CPU
+		UAT|Any CPU = UAT|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.Development|Any CPU.Build.0 = Development|Any CPU
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.Production|Any CPU.Build.0 = Production|Any CPU
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{6178A8E1-67DA-4DD2-86FC-A21C1FDFE256}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.Development|Any CPU.Build.0 = Development|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.Production|Any CPU.Build.0 = Production|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{119DD3B1-8BBF-4C2B-9E11-D4414A6E5E9E}.UAT|Any CPU.Build.0 = UAT|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.Development|Any CPU.Build.0 = Development|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.Production|Any CPU.Build.0 = Production|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.UAT|Any CPU.ActiveCfg = UAT|Any CPU
+		{BBBBE555-6BDB-40B8-904C-210DD2E58B1F}.UAT|Any CPU.Build.0 = UAT|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC875C58-AF85-4005-9AC4-C63B0B3062E0}
+	EndGlobalSection
+EndGlobal
